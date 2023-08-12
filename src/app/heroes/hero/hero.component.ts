@@ -8,11 +8,10 @@ import { Hero } from '../../hero';
   styleUrls: ['./hero.component.css'],
 })
 export class HeroComponent implements OnInit {
-  @Input() hero?: Hero;
+  @Input() hero!: Hero;
   constructor() {}
 
   ngOnInit() {
     console.log(this.hero);
   }
-
 }
